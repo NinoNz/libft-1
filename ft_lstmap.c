@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 12:46:59 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/04/08 13:20:32 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/04/12 13:48:52 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_lst;
-	t_list *new_element;
+	t_list	*new_lst;
+	t_list	*new_element;
 
 	if (!lst)
 		return (NULL);

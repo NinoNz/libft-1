@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 12:11:33 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/04/08 13:08:42 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/04/12 13:48:11 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *next_lst;
-	t_list *current_lst;
+	t_list	*next_lst;
+	t_list	*current_lst;
 
 	current_lst = *lst;
 	while (current_lst)
