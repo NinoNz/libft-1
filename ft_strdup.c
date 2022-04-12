@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:10:37 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/03/30 23:45:21 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/04/12 11:28:09 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s1)
 	char	*str;
 
 	i = 0;
-	if (!s1)
-		return (NULL);
 	str = (char *)malloc(sizeof(*s1) * (ft_strlen(s1) + 1));
 	if (!str)
 		return (NULL);

@@ -6,7 +6,7 @@
 #    By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 13:33:02 by anshimiy          #+#    #+#              #
-#    Updated: 2022/04/08 13:17:06 by anshimiy         ###   ########.fr        #
+#    Updated: 2022/04/12 11:20:16 by anshimiy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,8 @@ SRCS = ft_isalpha.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_calloc.c \
+		ft_strdup.c \
 
 BONUS_FILES	=	ft_lstnew.c \
 				ft_lstadd_front.c \
@@ -78,3 +80,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY : all clean fclean re
