@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 23:51:52 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/04/08 12:39:49 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/04/14 11:21:57 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static unsigned int	ft_get_nb_strs(char const *s, char c)
 	i = 0;
 	nb_strs = 0;
 	last_i_letter = c;
-	while (s[i] != '\0')
+	while (s && s[i] != '\0')
 	{
 		if (s[i] != c && last_i_letter == c)
 			nb_strs++;
@@ -46,7 +46,8 @@ static unsigned int	ft_get_nb_strs(char const *s, char c)
 }
 
 static unsigned int	ft_get_next_strlen(char **next_str,
-		unsigned int *next_str_len, char c)
+										unsigned int *next_str_len,
+										char c)
 {
 	unsigned int	i;
 
